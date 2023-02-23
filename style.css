@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,700;1,600&display=swap');
+
+
+:root{
+    --fonte:'Tourney', cursive;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+
+
+html{
+    font-size: 62.5%;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-image: url(/1Estrelas\ no\ Universo\ \ 4K\ Descanso\ de\ tela\ relaxante\ 2160\ x\ 3840_Trim.gif);
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+
+.pai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    background: rgb(24,125,214);
+    background: linear-gradient(90deg, rgba(24,125,214,1) 0%, rgba(1,6,13,1) 0%, rgba(100,168,234,1) 54%, rgba(69,121,166,1) 64%, rgba(73,97,102,1) 100%);
+    height: 250px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 .8rem 2.5rem rgba(0,10,0, .8);
+    
+}
+
+.pai.active{
+    height: 300px;
+
+}
+
+.pai.active .header h1{
+    font-size: 2.5rem;
+}
+
+.header-form{
+    padding-left: 50px;
+    margin-right: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pai .header h1{
+    font-size: 3rem;
+    text-align: center;
+    font-family: var(--fonte);
+}
+.pai .header p {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: var(--fonte);
+}
+.pai .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pai .form input{
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    height: 40px;
+    margin-bottom: 2rem;
+    border: none;
+    border-bottom: .1rem solid rgb(97, 148, 214);
+    
+}
+
+.pai .form input::placeholder{
+    padding-left: 5rem;
+    color: rgb(169, 196, 247);
+}
+
+.pai .form button{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(97, 148, 214);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #eee;
+    cursor: pointer;
+}
+
+.pai .form button:hover{
+    border: .1rem solid rgb(97, 148, 214);
+    color: rgb(219, 229, 241);
+    background-color: transparent;
+    font-weight: bolder;
+
+}
+
+.pai .qr-code{
+    display: none;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    pointer-events: none;
+    border: 1px solid #ccc;
+}
+
+.pai .qr-code img{
+    width: 170px;
+}
+
+.pai.active .qr-code{
+    display: block;
+    transition: all .5s .5s ease;
+
+}
+
+
+
